@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090609">
+<title>For My Favorite Person ♥</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&family=Special+Elite&display=swap');
+:root{--bg:#090609;--panel:#160d12;--red:#d92343;--pink:#ff879c;--muted:#c6afb7;--white:#fff4f6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#3b101c 0,#10090d 44%,#050405 100%);color:var(--white);font-family:Vazirmatn,system-ui,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;background-image:repeating-linear-gradient(135deg,transparent 0 20px,#fff 21px,transparent 22px 42px);mask-image:linear-gradient(to bottom,black,transparent 70%)}
+.wrap{width:min(980px,92%);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0;color:var(--muted);font-size:.8rem;gap:12px}.brand{letter-spacing:2px;color:var(--pink);font-family:'Special Elite',monospace}.lang{border:1px solid #713044;border-radius:30px;padding:8px 13px;background:#1a0d12;color:var(--white);cursor:pointer;font:inherit;white-space:nowrap}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:35px 0 60px;position:relative}.hero-card{width:min(740px,100%);padding:clamp(22px,5vw,48px);border:1px solid #6d2739;border-radius:24px;background:linear-gradient(145deg,#190b11e8,#090609ed);box-shadow:0 20px 80px #0009;position:relative;overflow:hidden}.hero-card:after{content:"✦  ♥  ✦";position:absolute;bottom:12px;left:18px;color:#a82d48;letter-spacing:8px}.heart{font-size:3rem;color:var(--red);text-shadow:0 0 28px #f3264b;animation:pulse 1.8s infinite}.tag{display:inline-block;border:1px solid #783041;color:#ff9aac;border-radius:99px;padding:7px 14px;font-size:.8rem;letter-spacing:1px}.hero h1{font-size:clamp(2.2rem,9vw,5rem);line-height:1.2;margin:18px 0 12px;font-weight:800}.hero h1 span{color:var(--red);display:block}.sub{color:var(--muted);max-width:570px;margin:0 auto 25px;line-height:2}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:0;border-radius:10px;padding:12px 18px;background:var(--red);color:white;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;box-shadow:0 8px 28px #e3264528;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}.btn.secondary{background:#25151b;border:1px solid #63303d;box-shadow:none}.divider{height:1px;background:linear-gradient(90deg,transparent,#772638,transparent);margin:8px 0 42px}.section{padding:18px 0 48px}.eyebrow{font-family:'Special Elite',monospace;color:#ff748b;letter-spacing:2px;font-size:.85rem}.section h2{font-size:clamp(1.6rem,5vw,2.35rem);margin:8px 0}.desc{color:var(--muted);line-height:1.9;margin-top:0}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}.memory{margin:0;background:linear-gradient(145deg,#251019,#10090d);border:1px solid #51232f;border-radius:16px;padding:9px;overflow:hidden}.memory img{display:block;width:100%;height:auto;max-height:650px;object-fit:contain;border-radius:10px;background:#050405}.memory figcaption{padding:12px 8px 7px;color:#e9cbd2;line-height:1.8;font-size:.93rem}.memory.wide{grid-column:1/-1}.memory.wide img{max-height:780px}.video-box{border:1px solid #7c3448;border-radius:18px;background:linear-gradient(145deg,#1c0d13,#0b0709);padding:16px;margin-top:22px;box-shadow:0 14px 42px #0006}.video-box video{display:block;width:100%;max-height:620px;border-radius:12px;background:#050405}.video-caption{text-align:center;color:var(--muted);line-height:1.8;padding:10px 4px 2px}.note{border:1px solid #632b39;border-radius:18px;padding:clamp(20px,5vw,32px);background:linear-gradient(145deg,#251018,#120b0f);text-align:center;margin-top:22px}.note p{line-height:2.1;color:#f2dfe3}.hidden{display:none}.footer{text-align:center;padding:35px 0 50px;color:#9d858c;font-size:.8rem}.footer .brand{display:block;margin-bottom:8px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#f8e8ec;color:#250d14;padding:11px 16px;border-radius:10px;display:none;z-index:5;max-width:90%;text-align:center}
+@keyframes pulse{50%{transform:scale(1.1);opacity:.75}}
+@media(max-width:620px){.gallery{grid-template-columns:1fr}.memory.wide{grid-column:auto}.hero{min-height:72vh}.top{padding-top:16px}.section{padding-bottom:35px}.hero-card{padding:24px 17px}.brand{font-size:.72rem}}
+</style>
+</head>
+<body>
+<header class="wrap top"><div class="brand">LOVE LOUD / BIRTHDAY EDITION</div><button class="lang" id="langBtn" type="button">EN / فارسی</button></header>
+<main class="wrap">
+<section class="hero"><div class="hero-card">
+<div class="heart">♥</div><div class="tag" data-fa="برای آدمِ خاصِ من" data-en="MADE JUST FOR YOU">برای آدمِ خاصِ من</div>
+<h1><span data-fa="تولدت مبارک" data-en="Happy Birthday">تولدت مبارک</span><span id="personName">MY FAVORITE PERSON</span></h1>
+<p class="sub" data-fa="یه گوشه‌ی کوچیک از دنیای ما؛ پر از خاطره، چت‌های دوست‌داشتنی، مانهوا، گربه و یه عالمه دوست‌داشتن. این یکی فقط برای توئه." data-en="A little corner of our world: memories, favorite messages, manhwa, cats, and a whole lot of love. This one is only for you.">یه گوشه‌ی کوچیک از دنیای ما؛ پر از خاطره، چت‌های دوست‌داشتنی، مانهوا، گربه و یه عالمه دوست‌داشتن. این یکی فقط برای توئه.</p>
+<a href="#memories" class="btn" data-fa="بریم سراغ خاطره‌هامون ↓" data-en="Open our memories ↓">بریم سراغ خاطره‌هامون ↓</a>
+</div></section>
+<div class="divider"></div>
+<section class="section" id="memories"><div class="eyebrow">01 / OUR LITTLE UNIVERSE</div><h2 data-fa="تکه‌هایی از دنیای خودمون" data-en="Pieces of our little world">تکه‌هایی از دنیای خودمون</h2><p class="desc" data-fa="از عکس‌های خودمون تا چیزایی که وایب ما رو دارن؛ هرکدوم یه تیکه از این خاطره‌ان." data-en="Our photos and the things that feel like us. Every piece belongs to this little memory.">از عکس‌های خودمون تا چیزایی که وایب ما رو دارن؛ هرکدوم یه تیکه از این خاطره‌ان.</p>
+<div class="gallery">
+<figure class="memory wide"><img src="photos/photo2.jpg" alt="کلاژ خاطرات ما"><figcaption data-fa="ما، با تمام شلوغی‌ها و چیزهایی که دوست داریم. همین ترکیب عجیب و قشنگ خودمونه." data-en="Us, and all the little things we love. A chaotic little world that feels like ours.">ما، با تمام شلوغی‌ها و چیزهایی که دوست داریم. همین ترکیب عجیب و قشنگ خودمونه.</figcaption></figure>
+<figure class="memory"><img src="photos/photo1.jpg" alt="چت و اسم‌های ذخیره شده"><figcaption data-fa="از «My Husband» تا «my wifey»؛ انگار اسم گذاشتن روی همدیگه خودش یه سرگرمی جداست." data-en="From “My Husband” to “my wifey”: apparently giving each other names is its own hobby.">از «My Husband» تا «my wifey»؛ انگار اسم گذاشتن روی همدیگه خودش یه سرگرمی جداست.</figcaption></figure>
+<figure class="memory"><img src="photos/photo3.png" alt="کلاژ مشکی قرمز و مانهوا"><figcaption data-fa="قرمز و مشکی، گربه‌ها، مانهوا و یه ذره آشوب. دقیقاً همون حال‌وهوایی که می‌خواستم." data-en="Red and black, cats, manhwa, and a little chaos. Exactly the vibe I wanted.">قرمز و مشکی، گربه‌ها، مانهوا و یه ذره آشوب. دقیقاً همون حال‌وهوایی که می‌خواستم.</figcaption></figure>
+</div></section>
+<div class="divider"></div>
+<section class="section"><div class="eyebrow">02 / THE CHAT ARCHIVE</div><h2 data-fa="حرف‌هایی که دوست دارم نگه دارم" data-en="Words I want to keep">حرف‌هایی که دوست دارم نگه دارم</h2><p class="desc" data-fa="بعضی پیام‌ها رو آدم دلش نمیاد گم کنه؛ مخصوصاً این مدل حرف زدن‌های خودمون." data-en="Some messages are too precious to lose, especially the way we talk to each other.">بعضی پیام‌ها رو آدم دلش نمیاد گم کنه؛ مخصوصاً این مدل حرف زدن‌های خودمون.</p>
+<div class="gallery">
+<figure class="memory"><img src="photos/chat1.png" alt="اسکرین‌شات چت با قلب‌ها"><figcaption data-fa="یه تیکه از چت‌هامون که باید بمونه." data-en="A little piece of our chat worth keeping.">یه تیکه از چت‌هامون که باید بمونه.</figcaption></figure>
+<figure class="memory"><img src="photos/chat2.png" alt="اسکرین‌شات چت و تعریف کردن"><figcaption data-fa="و البته تعریف‌هایی که انگار قرار نیست تموم بشن." data-en="And, naturally, the compliments that never seem to end.">و البته تعریف‌هایی که انگار قرار نیست تموم بشن.</figcaption></figure>
+</div></section>
+<div class="divider"></div>
+<section class="section" id="video"><div class="eyebrow">03 / JUST FOR YOU</div><h2 data-fa="یه ویدئو فقط برای من؟ نه، فقط برای تو" data-en="A little video, just for you">یه ویدئو فقط برای من؟ نه، فقط برای تو</h2><p class="desc" data-fa="اینم سورپرایز تصویری سایت. صداش رو روشن کن و با خیال راحت تماشا کن." data-en="Here is the video surprise. Turn the sound on and enjoy.">اینم سورپرایز تصویری سایت. صداش رو روشن کن و با خیال راحت تماشا کن.</p>
+<div class="video-box"><video controls playsinline preload="metadata"><source src="photos/birthday-video.mp4" type="video/mp4">مرورگر شما پخش ویدئو را پشتیبانی نمی‌کند.</video><div class="video-caption" data-fa="این قسمت مخصوص توئه، زیدِ دوست‌داشتنی من." data-en="This part is all yours, my favorite person.">این قسمت مخصوص توئه، زیدِ دوست‌داشتنی من.</div></div></section>
+<div class="divider"></div>
+<section class="section"><div class="eyebrow">04 / OPEN WHEN READY</div><h2 data-fa="نامه‌ی تولدت" data-en="Your birthday letter">نامه‌ی تولدت</h2><p class="desc" data-fa="این دکمه رو بزن؛ نامه‌ات منتظرته." data-en="Tap the button. Your letter is waiting.">این دکمه رو بزن؛ نامه‌ات منتظرته.</p>
+<div style="text-align:center"><button class="btn" id="letterBtn" data-fa="باز کردن نامه ♥" data-en="Open your letter ♥">باز کردن نامه ♥</button></div>
+<div class="note hidden" id="letter">
+<h2 data-fa="تولدت مبارک، آدمِ قشنگِ من" data-en="Happy birthday, my favorite human">تولدت مبارک، آدمِ قشنگِ من</h2>
+<p data-fa="امیدوارم سال جدید زندگیت پر از اتفاق‌های خوب، آرامش، خنده‌های واقعی و چیزهایی باشه که دلت می‌خواد. ممنون که با همین مدل خاص خودت، روزهام رو قشنگ‌تر می‌کنی. دوست دارم همیشه دلیل‌های بیشتری برای خوشحال بودنت داشته باشی و هیچ‌وقت یادت نره که برای من چقدر مهمی. تولدت مبارک، زید من. این صفحه کوچیکه، ولی همه‌ی حس خوبش برای توئه." data-en="I hope this new year of your life brings you good surprises, peace, real laughter, and the things your heart has been wishing for. Thank you for making my days better just by being your very particular self. I hope you always have more reasons to be happy, and never forget how much you matter to me. Happy birthday, my favorite person. This page is small, but every bit of its love is for you.">امیدوارم سال جدید زندگیت پر از اتفاق‌های خوب، آرامش، خنده‌های واقعی و چیزهایی باشه که دلت می‌خواد. ممنون که با همین مدل خاص خودت، روزهام رو قشنگ‌تر می‌کنی. دوست دارم همیشه دلیل‌های بیشتری برای خوشحال بودنت داشته باشی و هیچ‌وقت یادت نره که برای من چقدر مهمی. تولدت مبارک، زید من. این صفحه کوچیکه، ولی همه‌ی حس خوبش برای توئه.</p>
+<button class="btn secondary" id="copyBtn" data-fa="کپی کردن نامه" data-en="Copy the letter">کپی کردن نامه</button>
+</div></section>
+</main>
+<footer class="footer"><span class="brand">MADE WITH TOO MUCH LOVE</span><span data-fa="برای تو، و فقط تو." data-en="For you, and only you.">برای تو، و فقط تو.</span></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+let english=false;
+const langBtn=document.getElementById('langBtn');
+function setLang(toEnglish){english=toEnglish;document.documentElement.lang=english?'en':'fa';document.documentElement.dir=english?'ltr':'rtl';document.querySelectorAll('[data-fa][data-en]').forEach(el=>{el.textContent=english?el.dataset.en:el.dataset.fa});langBtn.textContent=english?'فارسی / EN':'EN / فارسی';}
+langBtn.addEventListener('click',()=>setLang(!english));
+const letterBtn=document.getElementById('letterBtn'), letter=document.getElementById('letter');
+letterBtn.addEventListener('click',()=>{letter.classList.toggle('hidden');letterBtn.textContent=letter.classList.contains('hidden')?(english?'Open your letter ♥':'باز کردن نامه ♥'):(english?'Close letter':'بستن نامه');if(!letter.classList.contains('hidden'))letter.scrollIntoView({behavior:'smooth',block:'center'})});
+const toast=document.getElementById('toast');
+function showToast(msg){toast.textContent=msg;toast.style.display='block';setTimeout(()=>toast.style.display='none',2200)}
+document.getElementById('copyBtn').addEventListener('click',async()=>{const p=letter.querySelector('p');try{await navigator.clipboard.writeText(p.textContent);showToast(english?'Letter copied':'نامه کپی شد')}catch(e){showToast(english?'Select and copy the letter text':'متن نامه رو انتخاب و کپی کن')}});
+</script>
+</body></html>
